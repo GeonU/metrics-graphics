@@ -6,7 +6,7 @@ _MetricsGraphics.js_ is a library optimized for visualizing and laying out time-
 
 A sample set of examples may be found on [the examples page](http://metricsgraphicsjs.org). The example below demonstrates how easy it is to produce a graphic. Our graphics function provides a robust layer of indirection, allowing one to more efficiently build, say, a dashboard of interactive graphics, each of which may be pulling data from a different data source. For the complete list of options, and for download instructions, [take a look at the sections below](https://github.com/mozilla/metrics-graphics/wiki).
 
-```
+```javascript
 MG.data_graphic({
     title: 'Downloads',
     description: 'This graphics shows Firefox GA downloads for the past six months.',
@@ -42,23 +42,33 @@ The library depends on [D3](http://d3js.org) and [jQuery](http://jquery.com/).
 ## Contributing
 If you would like to help extend MetricsGraphics.js or fix bugs, please [fork the library](https://github.com/mozilla/metrics-graphics) and install [Node.js](http://nodejs.org). Then, from the project's root directory install [gulp](http://gulpjs.com):
 
-    install gulp
+```bash
+$ install gulp
+```
 
 Then, install the library's dependencies:
 
-    npm install
+```bash
+$ npm install
+```
 
 To build the library from source, type:
 
-    gulp build:js
+```bash
+$ gulp build:js
+```
 
 To run tests, type:
 
-    gulp test
+```bash
+$ gulp test
+```
 
 To run the development server (accessible at http://localhost:4300):
 
-    gulp serve
+    ```bash
+    $ gulp serve
+    ```
 
 
 ## Resources
